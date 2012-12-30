@@ -24,7 +24,7 @@ j,lilyhue,/home/karel/work/outerthought/lilyhue
 j,lucid64b,/home/karel/vagrant/lucid64b
 j,maastro,/home/karel/work/maastro/maastro/maastro-daisy
 j,misc,/home/karel/work/misc
-j,myhome,/home/karel/Dropbox/personal/myhome
+j,myhome,/home/karel/work/personal/myhome
 j,ot,/home/karel/work/outerthought
 j,outerthought,/home/karel/work/outerthought
 j,pno,/home/karel/work/awv/pno
@@ -38,7 +38,7 @@ j,vm,/home/karel/vm
 j,whirr,/home/karel/work/outerthought/whirr
 j,work,/home/karel/work
 j,lucene-3.0.1,/home/karel/work/misc/lucene-3.0.1
-j,puppet,/home/karel/Dropbox/personal/puppet
+j,puppet,/home/karel/work/personal/myhome/puppet
 j,whirr-test,/home/karel/work/outerthought/misc/vagrant/whirr-test
 j,bally,/home/karel/work/personal/bally
 j,cluster-conf-baremetal,/home/karel/work/outerthought/lily-tests/tests/201112-comparative-1.1-1.0.4-test/cluster-conf-baremetal
@@ -104,3 +104,4 @@ j,vagrant-singlenode,/home/karel/work/outerthought/lily-provisioning/vagrant-sin
 j,cdb,/home/karel/work/outerthought/consumerdb
 j,lily-fab-prov,/home/karel/work/outerthought/lily-fab-prov
 j,gitosis-admin,/home/karel/work/gitosis-admin
+j,myhome-secret,/home/karel/Ubuntu One/personal/myhome-secret

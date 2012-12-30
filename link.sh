@@ -21,3 +21,4 @@ function link() {
 
 link "$(cd $(dirname $0); pwd)"
 link "$HOME/Ubuntu One/personal/myhome-secret"
+link "$HOME/Ubuntu One/personal/myhome-misc"
