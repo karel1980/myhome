@@ -5,7 +5,4 @@ directory.
 
 The 'link.sh' script creates the necessary symlinks.
 
-There are no secrets here.
-The secrets are stored in a Dropbox folder ~/Dropbox/personal/myhome
-I know Dropbox isn't the most secure option, but it's etter than putting stuff in
-a public github repository and pray that it will remain unnoticed ;)
+Files containing secrets should be stored in a separate location (see link.sh: "$HOME/Ubuntu One/personal/myhome-secret")
