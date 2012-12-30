@@ -7,6 +7,7 @@ function link() {
     echo $MYHOME does not exist. skipped.
     return
   fi
+  echo "Linking to $MYHOME"
 
   # make the directories:
   (cd "$MYHOME"; find . -name .git -prune -o -type d -exec mkdir -p "$HOME"/{} ';')
