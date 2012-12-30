@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Edit my base puppet manifest
+
+vim "$HOME/.mypuppet/base.pp"

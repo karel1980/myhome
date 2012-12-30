@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Mount my pogoplug
+
+$(dirname $0)/pogoplugfs --mountpoint /home/pogo >/dev/null &

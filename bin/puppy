@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Call puppet to install basic packages
+
+set -x
+sudo puppet apply --modulepath="$HOME/.mypuppet/modules" "$HOME/.mypuppet/base.pp"
