@@ -6,11 +6,11 @@
 SOURCE="$1"
 TARGET="$2"
 
-if [ -z "$SOURCE" -o "$TARGET" ]; then
+if [ -z "$SOURCE" -o -z "$TARGET" ]; then
   echo "Usage: $0 me@devup.mydomain.com user@target"
   exit 1
 fi
 
-rsync -av "$DEVUP_SOURCE":devup/ /tmp/devup/
-rsync -av /tmp/devup "$DEVUP_TARGET":devup/
-ssh $DEVUP_TARGET devup/devup.sh
+rsync -av "$SOURCE":devup/ /tmp/devup/
+rsync -av /tmp/devup/ "$TARGET":devup/
+ssh $TARGET devup/devup.sh
