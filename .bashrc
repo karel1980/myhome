@@ -2,7 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -105,3 +104,5 @@ export HISTFILESIZE
 for rcfile in ~/.bashrc.d/*.bash; do
     . $rcfile
 done
+
+(cd $HOME/work/personal/myhome; git status --short)
