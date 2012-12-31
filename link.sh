@@ -10,15 +10,12 @@ function link() {
   echo "Linking to $MYHOME"
 
   # make the directories:
-  (cd "$MYHOME"; find . -name .git -prune -o -type d -exec mkdir -p "$HOME"/{} ';')
-
-  # remove old files that may be in the way
-  (cd "$MYHOME"; find . -type d -name .git -prune -o \! -name '*.swp' \! -name link.sh \! -name README.md -type f -exec rm -f "$HOME"/{} \;)
+  (cd "$MYHOME"; find . -type d -exec mkdir -p "$HOME"/{} ';')
 
   # symlink files:
-  (cd "$MYHOME"; find . -type d -name .git -prune -o \! -name '*.swp' \! -name link.sh \! -name README.md -type f -exec ln -sf "$MYHOME"/{} "$HOME"/{} \;)
+  (cd "$MYHOME"; find . -type f \! -name '*.swp' -exec ln -sf "$MYHOME"/{} "$HOME"/{} \;)
 }
 
-link "$(cd $(dirname $0); pwd)"
+link "$(cd $(dirname $0); pwd)/home"
 link "$HOME/Ubuntu One/personal/myhome-secret"
 link "$HOME/Ubuntu One/personal/myhome-misc"
