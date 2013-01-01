@@ -1,0 +1,7 @@
+[user]
+	email = karel@ngdata.com
+	name = Karel Vervaeke
+[core]
+	excludesfile = /home/karel/.gitignore_global
+[color]
+	ui = true
