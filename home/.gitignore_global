@@ -3,3 +3,5 @@ target/
 .idea/
 .classpath
 .project
+.settings/
+.externalToolBuilders/
