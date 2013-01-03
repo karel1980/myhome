@@ -2,10 +2,10 @@ export EDITOR=vim
 export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
 
-export CONSUMERDB_SRC=$HOME/work/outerthought/consumerdb
-export SCHEMATOOLS_SRC=/home/karel/work/outerthought/lily-schematools
-export LILY_SRC=$HOME/work/outerthought/lily
-export LILY_ETL_SRC=$HOME/work/outerthought/lily-etl
+export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
+export SCHEMATOOLS_SRC=/home/karel/work/ngdata/lily-schematools
+export LILY_SRC=$HOME/work/ngdata/lily
+export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.0.0
 export PATH=$PATH:$HADOOP_HOME/bin
 
@@ -20,9 +20,7 @@ export GAE_HOME=$HOME/opt/appengine-java-sdk-1.3.4
 export CREPO=$HOME/work/misc/crepo/crepo.py
 export ROOT=$HOME/work/misc/hue
 
-export LILY_SRC=$HOME/work/outerthought/lily
-
-export DEBEMAIL="karel@outerthought.org"
+export DEBEMAIL="karel@ngdata.com"
 export DEBFULLNAME="Karel Vervaeke"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
@@ -92,5 +90,5 @@ each() {
 alias z='notify-send'
 alias pbase='vim "$HOME/Ubuntu One/personal/puppet/base.pp"'
 
-export KAURI_HOME=$HOME/work/outerthought/kauri
+export KAURI_HOME=$HOME/work/ngdata/kauri
 export PATH=$PATH:$HOME/opt/idea/bin
