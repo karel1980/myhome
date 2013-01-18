@@ -106,3 +106,5 @@ for rcfile in ~/.bashrc.d/*.bash; do
 done
 
 (cd $HOME/work/personal/myhome; git status --short)
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
