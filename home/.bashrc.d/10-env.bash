@@ -88,7 +88,6 @@ each() {
 }
 
 alias z='notify-send'
-alias pbase='vim "$HOME/Ubuntu One/personal/puppet/base.pp"'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
 export PATH=$PATH:$HOME/opt/idea/bin

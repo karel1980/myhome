@@ -10,7 +10,7 @@ class base {
       "htop",
       "imagemagick", "inkscape", "iotop", 
       "jruby",
-      "libvirt-bin", "libavcodec-dev", "libavcodec53", "libimage-exiftool-perl", "libsmbclient", "libxml2-utils", "ldap-utils", "libpam-smbpass",
+      "libvirt-bin", "libavcodec-dev", "libavcodec53", "libimage-exiftool-perl", "libsmbclient", "libxml2-utils", "ldap-utils", "libpam-smbpass", "libnet-dbus-glib-perl"
       "mysql-server", "mpg321", "mc", "mercurial", "moreutils", "mcollective-client",
       "nautilus-dropbox", "nmap",
       "ogmrip", "openjdk-6-jdk", "openjdk-7-doc", "openjdk-7-jdk", "openjdk-7-source", "openshot", "openssh-server", "octave3.2",
