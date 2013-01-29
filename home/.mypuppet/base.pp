@@ -17,7 +17,7 @@ class base {
       "p7zip", "p7zip-full", "pssh", "pdftk", "pexec", "pavucontrol", "python-xmpp", "picsaw", "pastebinit",
       "quicksynergy",
       "rubygems",
-      "s3cmd", "sabnzbdplus", "sawfish", "smbfs", "subversion", "synaptic", "sysstat", "sauerbraten", "supertuxkart", "shutter", "samba",
+      "s3cmd", "sabnzbdplus", "sawfish", "smbfs", "subversion", "synaptic", "sysstat", "sauerbraten", "supertuxkart", "shutter", "samba", "soundconverter",
       "tmux", "traceroute", "tcpdump", "thunderbird", "tidy",
       "ubuntu-restricted-addons", "ubuntu-restricted-extras", "ubuntu-vm-builder", "umlet", "umbrello",
       "vim-gnome", "vlc", "virt-manager", "vorbis-tools", "vnstat",
