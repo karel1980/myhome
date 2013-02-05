@@ -29,5 +29,6 @@ alias lily-import="$HOME/work/ngdata/lily/apps/import/target/lily-import"
 alias lily-service="$HOME/work/ngdata/lily/dist/src/main/resources/service/lily-service"
 alias install-lily-service="$HOME/work/ngdata/lily/dist/src/main/resources/service/install-lily-service"
 alias uninstall-lily-service="$HOME/work/ngdata/lily/dist/src/main/resources/service/uninstall-lily-service"
+alias dls="devscripts/lily-server.sh"
 
 alias cdb-admin="$HOME/work/ngdata/consumerdb/tools/target/cdb-admin"
