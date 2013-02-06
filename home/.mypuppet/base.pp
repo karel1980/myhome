@@ -16,7 +16,7 @@ class base {
       "ogmrip", "openjdk-6-jdk", "openjdk-7-doc", "openjdk-7-jdk", "openjdk-7-source", "openshot", "openssh-server", "octave3.2",
       "p7zip", "p7zip-full", "pssh", "pdftk", "pexec", "pavucontrol", "python-xmpp", "picsaw", "pastebinit",
       "quicksynergy",
-      "rubygems",
+      "rubygems", "ri-li",
       "s3cmd", "sabnzbdplus", "sawfish", "smbfs", "subversion", "synaptic", "sysstat", "sauerbraten", "supertuxkart", "shutter", "samba", "soundconverter",
       "tmux", "traceroute", "tcpdump", "thunderbird", "tidy",
       "ubuntu-restricted-addons", "ubuntu-restricted-extras", "ubuntu-vm-builder", "umlet", "umbrello",
