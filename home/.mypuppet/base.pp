@@ -2,7 +2,7 @@ class base {
     $basepackages = [
       "acidrip", "ack-grep", "apparix", "apt-utils", "audacity", "apt-cacher", "apache2", "atop", "antiword",
       "bzr", "bwm-ng",
-      "chromium-browser", "chromium-codecs-ffmpeg", "clusterssh", "compizconfig-settings-manager", "curl", "calibre", "cheese", "clojure", "cowsay", "colordiff", "csstidy",
+      "chromium-browser", "chromium-codecs-ffmpeg", "clusterssh", "compizconfig-settings-manager", "curl", "calibre", "cheese", "clojure", "cowsay", "colordiff", "csstidy", "ccrypt",
       "dconf-tools", "desktopcouch-ubuntuone", "devscripts", "dvdrip", "dvdbackup", "dsh", "dos2unix", "dia", "deluge", "dcraw",
       "ec2-ami-tools", "ec2-api-tools",
       "ffmpeg", "freemind",
