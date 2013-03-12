@@ -13,7 +13,7 @@ export PATH=$PATH:$HADOOP_HOME/bin
 #export MAVEN_HOME=$HOME/opt/maven-1.0.2
 export MAVEN_HOME=$HOME/opt/maven-1.1
 export MAVEN_REPO=$HOME/.maven/repository
-export M2_HOME=$HOME/opt/apache-maven-3.0.4
+export M2_HOME=$HOME/opt/apache-maven-3.0.5
 
 export CHROMIUM_ROOT=$HOME/work/persoonlijk/chromium
 export GAE_HOME=$HOME/opt/appengine-java-sdk-1.3.4
