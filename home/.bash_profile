@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+if [ -f ~/.bashrc ]; then
+   source ~/.bashrc
+fi
 
 # Load RVM, if you are using it
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
@@ -11,7 +15,7 @@ export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='standard'
+export BASH_IT_THEME='minimal'
 
 # Your place for hosting Git repos. I use this for private repos.
 export GIT_HOSTING='git@git.domain.com'
@@ -41,5 +45,3 @@ export TODO="t"
 
 # Load Bash It
 source $BASH_IT/bash_it.sh
-
-. $HOME/.bashrc
