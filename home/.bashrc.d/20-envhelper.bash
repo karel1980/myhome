@@ -106,5 +106,5 @@ if [ -n "$JAVA_HOME" ]; then
 fi
 }
 
-me s m3 mp mm j7
+me s m3 mp mm j6
 
