@@ -33,7 +33,7 @@ export EC2_URL=https://ec2.us-east-1.amazonaws.com
 export GRIFFON_HOME=$HOME/opt/griffon-1.1.0
 export PATH="$PATH:$GRIFFON_HOME/bin"
 
-export ANDROID_HOME=$HOME/opt/android-sdk-linux_x86
+export ANDROID_HOME=$HOME/opt/android-sdk-linux
 
 function awv() {
   export DAISY_HOME=$HOME/work/awv/awv-daisy/runtime/daisy
