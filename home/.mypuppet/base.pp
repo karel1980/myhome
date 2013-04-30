@@ -6,7 +6,7 @@ class base {
       'dconf-tools', 'desktopcouch-ubuntuone', 'devscripts', 'dvdrip', 'dvdbackup', 'dsh', 'dos2unix', 'dia', 'deluge', 'dcraw',
       'ec2-ami-tools', 'ec2-api-tools',
       'ffmpeg', 'freemind',
-      'gcompris', 'gcompris-sound-nl', 'gimp', 'git-svn', 'gitk', 'gnuplot', 'groovy', 'grpn', 'gtk-recordmydesktop', 'gddrescue', 'gconf-editor', 'glade', 'graphviz', 'gparted',
+      'gcompris', 'gcompris-sound-nl', 'gimp', 'git-svn', 'gitk', 'gnuplot', 'groovy', 'grpn', 'gtk-recordmydesktop', 'gddrescue', 'gconf-editor', 'glade', 'graphviz', 'gparted', 'golang-go',
       'htop',
       'imagemagick', 'inkscape', 'iotop',
       'jruby',
