@@ -77,6 +77,7 @@ alias cdp='cd $HOME/Pictures'
 alias ducks="du -cks *|sort -rn|head -11"
 alias gae=$GAE_HOME/bin/dev_appserver.sh
 alias mkgmap='java -Xmx2048M -jar ~/opt/mkgmap/mkgmap/mkgmap.jar'
+alias xo='xdg-open'
 
 alias sl='ls'
 alias LS='ls'
