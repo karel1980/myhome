@@ -91,6 +91,7 @@ each() {
 }
 
 alias z='notify-send'
+alias e='nautilus .'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
 export PATH=$PATH:$HOME/opt/idea/bin
