@@ -8,7 +8,7 @@ class base {
       'ffmpeg', 'freemind',
       'gcompris', 'gcompris-sound-nl', 'gimp', 'git-svn', 'gitk', 'gnuplot', 'groovy', 'grpn', 'gtk-recordmydesktop', 'gddrescue', 'gconf-editor', 'glade', 'graphviz', 'gparted', 'golang-go', 'gradle',
       'htop',
-      'imagemagick', 'inkscape', 'iotop', 'irssi',
+      'imagemagick', 'inkscape', 'iotop', 'irssi', 'iamcli', 'inotifytools',
       'jruby', 'jython',
       'libvirt-bin', 'libavcodec-dev', 'libavcodec53', 'libimage-exiftool-perl', 'libsmbclient', 'libxml2-utils', 'ldap-utils', 'libpam-smbpass', 'libnet-dbus-glib-perl', 'libsdl-ruby', 'links',
       'mysql-server', 'mpg321', 'mc', 'mercurial', 'moreutils', 'mcollective-client', 'most', 'musescore', 'markdown',
