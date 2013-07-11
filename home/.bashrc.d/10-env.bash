@@ -9,7 +9,6 @@ export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
 export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/apache-solr-4.0.0
-export PATH=$PATH:$HADOOP_HOME/bin
 
 #export MAVEN_HOME=$HOME/opt/maven-1.0.2
 export MAVEN_HOME=$HOME/opt/maven-1.1
@@ -31,7 +30,7 @@ export EC2_URL=https://ec2.us-east-1.amazonaws.com
 #export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 export GRIFFON_HOME=$HOME/opt/griffon-1.1.0
-export PATH="$PATH:$GRIFFON_HOME/bin"
+export GRADLE_HOME=$HOME/opt/gradle-1.6
 
 export ANDROID_HOME=$HOME/opt/android-sdk-linux
 
@@ -52,11 +51,22 @@ export IRCNICK="karel_ff"
 export IRCNAME="Karel Vervaeke"
 export IRCSERVER="irc.freenode.net"
 
-export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
-export PATH=$HOME/bin:$HOME/opt/eclipse:$MAVEN_HOME/bin:/var/lib/gems/1.8/bin:$PATH:$GRIFFON_HOME/bin:$WHIRR_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
 export KETTLE_HOME=$HOME/opt/data-integration
-export PATH=$PATH:$KETTLE_HOME
+
+export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH="$PATH:$GRIFFON_HOME/bin"
+export PATH="$PATH:$HADOOP_HOME/bin"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/opt/eclipse"
+export PATH="$PATH:$MAVEN_HOME/bin"
+export PATH="$PATH:/var/lib/gems/1.8/bin"
+export PATH="$PATH:$PATH"
+export PATH="$PATH:$GRADLE_HOME/bin"
+export PATH="$PATH:$WHIRR_HOME/bin"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$KETTLE_HOME"
+export PATH="$PATH:$HOME/opt/idea/bin"
 
 alias crepo=$CREPO
 alias ack=ack-grep
@@ -94,4 +104,3 @@ alias z='notify-send'
 alias e='nautilus .'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
-export PATH=$PATH:$HOME/opt/idea/bin
