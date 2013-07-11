@@ -6,5 +6,6 @@ target/
 .settings/
 .externalToolBuilders/
 maven-eclipse.xml
+.gradle/
 *.swp
 *.pyc
