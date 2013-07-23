@@ -1,6 +1,7 @@
 export EDITOR=vim
 export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
+export GRADLE_HOME="$HOME/opt/gradle-1.6"
 
 export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
 export SCHEMATOOLS_SRC=/home/karel/work/ngdata/lily-schematools
