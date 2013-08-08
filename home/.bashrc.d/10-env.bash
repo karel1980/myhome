@@ -105,3 +105,4 @@ alias z='notify-send'
 alias e='nautilus .'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
+export AWS_DEFAULT_REGION=us-east-1
