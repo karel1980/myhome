@@ -16,3 +16,8 @@ augroup CPT
   au BufWritePost *.cpt u
   au BufWritePost *.cpt set nobin
 augroup END
+
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END

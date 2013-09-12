@@ -8,6 +8,7 @@ export SCHEMATOOLS_SRC=/home/karel/work/ngdata/lily-schematools
 export LILY_SRC=$HOME/work/ngdata/lily
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
+export HBASE_HOME=$HOME/opt/hbase-0.94.2-cdh4.2.0
 export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/apache-solr-4.0.0
 
@@ -53,10 +54,12 @@ export IRCNAME="Karel Vervaeke"
 export IRCSERVER="irc.freenode.net"
 
 export KETTLE_HOME=$HOME/opt/data-integration
+export JMETER_HOME="$HOME/opt/apache-jmeter-2.9"
 
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export PATH="$PATH:$GRIFFON_HOME/bin"
 export PATH="$PATH:$HADOOP_HOME/bin"
+export PATH="$PATH:$HBASE_HOME/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/opt/eclipse"
 export PATH="$PATH:$MAVEN_HOME/bin"
@@ -67,6 +70,7 @@ export PATH="$PATH:$WHIRR_HOME/bin"
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$KETTLE_HOME"
+export PATH="$PATH:$JMETER_HOME/bin"
 export PATH="$PATH:$HOME/opt/idea/bin"
 
 alias crepo=$CREPO
@@ -81,7 +85,6 @@ alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 alias addpi='echo `pwd`>>$HOME/.pi'
 alias wget='wget -U "firefox"'
 alias fop="$HOME/opt/fop-0.95/fop"
-alias freemind='JAVA_HOME=/usr/lib/jvm/java-1.6.0-openjdk freemind'
 alias kauri='$KAURI_HOME/kauri.sh'
 alias curl='curl --cookie ~/tmp/cookies.txt --user-agent Mozilla/4.0'
 alias cdp='cd $HOME/Pictures'
