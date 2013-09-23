@@ -29,7 +29,7 @@
 ################################################################################
  
 # defaults
-SESSION=$USER
+SESSION=$USER-$RANDOM
 SSH_USER=$USER
 WINDOW=$RANDOM
 # synchronize panes: 1=yes, 0=no
