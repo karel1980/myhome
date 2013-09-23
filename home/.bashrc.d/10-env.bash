@@ -11,6 +11,7 @@ export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
 export HBASE_HOME=$HOME/opt/hbase-0.94.2-cdh4.2.0
 export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/apache-solr-4.0.0
+export ZOOKEEPER_HOME=$HOME/opt/zookeeper-3.4.5-cdh4.2.0
 
 #export MAVEN_HOME=$HOME/opt/maven-1.0.2
 export MAVEN_HOME=$HOME/opt/maven-1.1
@@ -59,6 +60,7 @@ export JMETER_HOME="$HOME/opt/apache-jmeter-2.9"
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export PATH="$PATH:$GRIFFON_HOME/bin"
 export PATH="$PATH:$HADOOP_HOME/bin"
+export PATH="$PATH:$ZOOKEEPER_HOME/bin"
 export PATH="$PATH:$HBASE_HOME/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/opt/eclipse"
