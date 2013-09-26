@@ -1,0 +1,7 @@
+#!/bin/bash
+
+jad="$HOME/opt/jad/jad"
+
+unzip -d $(basename $1)-jad $1
+find $(basename $1)-jad -name "*.class" -execdir "$jad" {} \;
+find $(basename $1)-jad -name "*.jad" -exec rename 's/.jad$/.java/' {} +
