@@ -110,6 +110,7 @@ each() {
 
 alias z='notify-send'
 alias e='nautilus .'
+alias pw='tail ~/.ng-mix-*'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
 export AWS_DEFAULT_REGION=us-east-1
