@@ -12,6 +12,7 @@ export HBASE_HOME=$HOME/opt/hbase-0.94.2-cdh4.2.0
 export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/apache-solr-4.0.0
 export ZOOKEEPER_HOME=$HOME/opt/zookeeper-3.4.5-cdh4.2.0
+export FLUME_HOME=$HOME/opt/apache-flume-1.3.0-cdh4.2.1-bin
 export UTS_SRC=/home/karel/work/mix/uts
 
 #export MAVEN_HOME=$HOME/opt/maven-1.0.2
@@ -64,6 +65,7 @@ export PATH="$PATH:$HADOOP_HOME/bin"
 export PATH="$PATH:$ZOOKEEPER_HOME/bin"
 export PATH="$PATH:$HBASE_HOME/bin"
 export PATH="$PATH:$HIVE_HOME/bin"
+export PATH="$PATH:$FLUME_HOME/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/opt/eclipse"
 export PATH="$PATH:$MAVEN_HOME/bin"
