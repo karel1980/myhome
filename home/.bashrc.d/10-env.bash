@@ -116,3 +116,21 @@ alias pw='tail ~/.ng-mix-*'
 
 export KAURI_HOME=$HOME/work/ngdata/kauri
 export AWS_DEFAULT_REGION=us-east-1
+
+function ec2sel() {
+    if [ -z "$1" ]; then
+      1=last
+      return
+    fi
+      
+    if [ ! -e "$HOME/.ec2/$1" ]; then
+      echo "~/.ec2/$1 does not exist"
+      return
+    fi
+
+    . "$HOME/.ec2/$1" 
+    if [ "$1" != "last" ]; then
+      ln -sf "$HOME/.ec2/$1" "$HOME/.ec2/last"
+    fi
+}
+ec2sel last
