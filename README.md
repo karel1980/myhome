@@ -1,8 +1,15 @@
 ## Myhome
 
-This repository contains all miscelaneous stuff that I use in my home
-directory.
+This repository contains config files for my $HOME directory.
+Everything is managed by stow.
 
-The 'link.sh' script creates the necessary symlinks.
+First steps:
 
-Files containing secrets should be stored in a separate location (see link.sh: "$HOME/Ubuntu One/personal/myhome-secret")
+    cd stow
+    stow -t $HOME *
+
+Fix any error you find by deleting the offending files and try again until success.
+Now restart your shell (or run exec bash).
+
+I use additional stow modules which are on Ubuntu One, see stow/bin/bin/stowit.sh.
+The environment variables for this script are in bash/.bashrc.d/10-env.sh

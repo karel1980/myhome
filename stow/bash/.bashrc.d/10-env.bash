@@ -4,7 +4,7 @@ export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elip
 export GRADLE_HOME="$HOME/opt/gradle-1.6"
 
 export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
-export SCHEMATOOLS_SRC=/home/karel/work/ngdata/lily-schematools
+export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
 export LILY_SRC=$HOME/work/ngdata/lily
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
@@ -13,7 +13,9 @@ export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/apache-solr-4.0.0
 export ZOOKEEPER_HOME=$HOME/opt/zookeeper-3.4.5-cdh4.2.0
 export FLUME_HOME=$HOME/opt/apache-flume-1.3.0-cdh4.2.1-bin
-export UTS_SRC=/home/karel/work/mix/uts
+export UTS_SRC=$HOME/work/mix/uts
+export STOW_DATA=$HOME/work/personal/myhome/stow
+export STOW_DATA_EXTRA=$HOME/"Ubuntu One"/personal/stowhome
 
 #export MAVEN_HOME=$HOME/opt/maven-1.0.2
 export MAVEN_HOME=$HOME/opt/maven-1.1
