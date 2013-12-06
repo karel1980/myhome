@@ -5,6 +5,7 @@ Everything is managed by stow.
 
 First steps:
 
+    sudo apt-get install stow
     cd stow
     stow -t $HOME *
 
