@@ -2,5 +2,7 @@
 #   sleep 10; alert
 
 alias alert='zenity --info --text "All done"'
-alias alert2='fortune -a|zenity --text-info'
+function alert2() {
+ (sleep 2; wmctrl -a Information -b add,above) & fortune -a|zenity --text-info
+}
 
