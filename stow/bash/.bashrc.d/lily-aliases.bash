@@ -1,3 +1,4 @@
+alias hbase-indexer="$HBASE_INDEXER_SRC/bin/hbase-indexer"
 alias lily-print-host="$HOME/work/ngdata/lily/tools/print-host/target/lily-print-host"
 alias lily-list-doc-links="$HOME/work/ngdata/lily/tools/doc-tools/target/lily-list-doc-links"
 alias lily-record-row-visualizer="$HOME/work/ngdata/lily/tools/record-row-visualizer/target/lily-record-row-visualizer"

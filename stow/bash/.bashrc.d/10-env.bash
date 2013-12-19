@@ -7,6 +7,7 @@ export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
 export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
 export LILY_SRC=$HOME/work/ngdata/lily
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
+export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
 export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
 export HBASE_HOME=$HOME/opt/hbase-0.94.2-cdh4.2.0
 export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
