@@ -6,6 +6,7 @@ alias lily-licensecheck="$HOME/work/ngdata/lily/tools/licensecheck/target/lily-l
 alias lily-rowlog-visualizer="$HOME/work/ngdata/lily/tools/rowlog-visualizer/target/lily-rowlog-visualizer"
 alias lily-upgrade-from-1.1="$HOME/work/ngdata/lily/tools/upgrade/target/lily-upgrade-from-1.1"
 alias lily-upgrade-from-1.0="$HOME/work/ngdata/lily/tools/upgrade/target/lily-upgrade-from-1.0"
+alias lily-hbase-indexer-classpath="$HOME/work/ngdata/lily/cr/indexer/hbase-indexer-mapper/target/lily-hbase-indexer-classpath-dev"
 alias lily-mapreduce-classpath="$HOME/work/ngdata/lily/cr/mapreduce/mapreduce/target/lily-mapreduce-classpath"
 alias rest-perftest="$HOME/work/ngdata/lily/cr/process/rest-perftest/target/rest-perftest"
 alias lily-server="$HOME/work/ngdata/lily/cr/process/server/target/lily-server"
