@@ -137,3 +137,9 @@ function ec2sel() {
     fi
 }
 ec2sel last
+
+function fack() {
+  local name=$1
+  shift
+  find . -name "$name" -exec ack-grep "$@" {} +
+}
