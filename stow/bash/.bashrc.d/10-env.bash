@@ -18,9 +18,7 @@ export UTS_SRC=$HOME/work/mix/uts
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/"Ubuntu One"/personal/stowhome
 
-#export MAVEN_HOME=$HOME/opt/maven-1.0.2
-export MAVEN_HOME=$HOME/opt/maven-1.1
-export MAVEN_REPO=$HOME/.maven/repository
+export M2_REPO=$HOME/.m2/repository
 export M2_HOME=$HOME/opt/apache-maven-3.1.1
 
 export CHROMIUM_ROOT=$HOME/work/persoonlijk/chromium
