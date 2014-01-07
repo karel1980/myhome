@@ -54,16 +54,16 @@ while [ -n "$1" ]; do
        ;;
      m2)
       path_remove /home/karel/opt/apache-maven-2.2.1/bin
-      path_remove /home/karel/opt/apache-maven-3.1.1/bin
+      path_remove /home/karel/opt/apache-maven-3.0.5/bin
       path_prepend /home/karel/opt/apache-maven-2.2.1/bin
       export M2_HOME=$HOME/opt/apache-maven-2.2.1
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
       ;;
      m3)
       path_remove /home/karel/opt/apache-maven-2.2.1/bin
-      path_remove /home/karel/opt/apache-maven-3.1.1/bin
-      path_prepend /home/karel/opt/apache-maven-3.1.1/bin
-      export M2_HOME=$HOME/opt/apache-maven-3.1.1
+      path_remove /home/karel/opt/apache-maven-3.0.5/bin
+      path_prepend /home/karel/opt/apache-maven-3.0.5/bin
+      export M2_HOME=$HOME/opt/apache-maven-3.0.5
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)

@@ -19,7 +19,7 @@ export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/"Ubuntu One"/personal/stowhome
 
 export M2_REPO=$HOME/.m2/repository
-export M2_HOME=$HOME/opt/apache-maven-3.1.1
+export M2_HOME=$HOME/opt/apache-maven-3.0.5
 
 export CHROMIUM_ROOT=$HOME/work/persoonlijk/chromium
 export GAE_HOME=$HOME/opt/appengine-java-sdk-1.3.4
@@ -103,6 +103,8 @@ alias ymd='exiftool "-Directory<DateTimeOriginal" -d %Y/%m/%d .'
 
 alias sl='ls'
 alias LS='ls'
+
+alias mssh='ssh-multi.sh'
 
 manswitch () { man $1 | less -p "^ +$2"; }
 
