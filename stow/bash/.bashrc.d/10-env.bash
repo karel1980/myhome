@@ -8,13 +8,25 @@ export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
 export LILY_SRC=$HOME/work/ngdata/lily
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
-export HADOOP_HOME=$HOME/opt/hadoop-2.0.0-mr1-cdh4.2.0
-export HBASE_HOME=$HOME/opt/hbase-0.94.2-cdh4.2.0
-export HIVE_HOME=$HOME/opt/hive-0.10.0-cdh4.2.0
 export SOLR_HOME=$HOME/opt/solr-4.6.0
-export ZOOKEEPER_HOME=$HOME/opt/zookeeper-3.4.5-cdh4.2.0
-export FLUME_HOME=$HOME/opt/apache-flume-1.3.0-cdh4.2.1-bin
 export UTS_SRC=$HOME/work/mix/uts
+
+#CDH stuff
+export CDH_DIR=$HOME/opt/cdh4.4.0
+export FLUME_HOME=$CDH_DIR/apache-flume-1.4.0-cdh4.4.0-bin
+export DATAFU_HOME=$CDH_DIR/datafu-0.0.4-cdh4.4.0
+export HADOOP_HOME=$CDH_DIR/hadoop-2.0.0-cdh4.4.0
+export HBASE_HOME=$CDH_DIR/hbase-0.94.6-cdh4.4.0
+export HCATALOG_HOME=$CDH_DIR/hcatalog-0.5.0-cdh4.4.0
+export HIVE_HOME=$CDH_DIR/hive-0.10.0-cdh4.4.0
+export MAHOUT_HOME=$CDH_DIR/mahout-0.7-cdh4.4.0
+export OOZIE_HOME=$CDH_DIR/oozie-3.3.2-cdh4.4.0
+export PIG_HOME=$CDH_DIR/pig-0.11.0-cdh4.4.0
+export SENTRY_HOME=$CDH_DIR/sentry-1.1.0-cdh4.4.0
+export SQOOP_HOME=$CDH_DIR/sqoop-1.4.3-cdh4.4.0
+export SQOOP2_HOME=$CDH_DIR/sqoop2-1.99.2-cdh4.4.0
+export ZOOKEEPER_HOME=$CDH_DIR/zookeeper-3.4.5-cdh4.4.0
+
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/"Ubuntu One"/personal/stowhome
 
@@ -144,3 +156,4 @@ function fack() {
   shift
   find . -name "$name" -exec ack-grep "$@" {} +
 }
+
