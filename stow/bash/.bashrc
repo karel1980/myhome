@@ -108,3 +108,6 @@ done
 (cd $HOME/work/personal/myhome; git status --short)
 
 PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
