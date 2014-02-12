@@ -6,7 +6,7 @@ set cm=blowfish
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 execute pathogen#infect()
 filetype plugin indent on
-map <C-n> :NERDTreeToggle <enter>
+"map <C-n> :NERDTreeToggle <enter>
 
 augroup CPT
   au!
