@@ -1,15 +1,28 @@
 #!/bin/bash
 
-# All stow modules
+function stow_dir() {
+  if [ ! -d "$1" ]; then
+    echo "$1 doesn't look like a directory."
+    return
+  fi
+  if ! cd "$1"; then
+    echo "cd \"$1\" failed. Skipping dir"
+    return
+  fi
+
+  echo running stow in $1
+  stow --no-folding -t /home/karel *
+}
+
 if [ -z "$STOW_DATA" ]; then
-  echo "STOW_DATA is not set"
+  echo "STOW_DATA is empty"
+else
+  stow_dir "$STOW_DATA"
 fi
-cd "$STOW_DATA"
-stow -t /home/karel *
 
 if [ -z "$STOW_DATA_EXTRA" ]; then
-  echo "STOW_DATA_EXTRA is not set"
+  echo "STOW_DATA_EXTRA is empty"
+else
+  stow_dir "$STOW_DATA_EXTRA"
 fi
-# secrets and other stuff I don't want in github are on Ubuntu One:
-cd "$STOW_DATA_EXTRA"
-stow -t /home/karel *
+
