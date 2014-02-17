@@ -5,7 +5,7 @@ class base {
       'chromium-browser', 'chromium-codecs-ffmpeg', 'clusterssh', 'compizconfig-settings-manager', 'curl', 'calibre', 'cheese', 'clojure', 'cowsay', 'colordiff', 'csstidy', 'ccrypt', 'cifs-utils',
       'dconf-tools', 'desktopcouch-ubuntuone', 'devscripts', 'dvdrip', 'dvdbackup', 'dsh', 'dos2unix', 'dia', 'deluge', 'dcraw',
       'ec2-ami-tools', 'ec2-api-tools',
-      'ffmpeg', 'freemind', 'freecad',
+      'ffmpeg', 'freemind', 'freecad', 'fortune-mod',
       'gcompris', 'gcompris-sound-nl', 'gimp', 'git-svn', 'gitk', 'gnuplot', 'groovy', 'grpn', 'gtk-recordmydesktop', 'gddrescue', 'gconf-editor', 'glade', 'graphviz', 'gparted', 'golang-go', 'gradle',
       'htop',
       'imagemagick', 'inkscape', 'iotop', 'irssi', 'iamcli',
