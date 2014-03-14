@@ -157,3 +157,9 @@ function fack() {
   find . -name "$name" -exec ack-grep "$@" {} +
 }
 
+function sandenv() {
+  export LILY_CONF_DIR=conf
+  export LILY_CLASSPATH=/tmp/lily-sandbox/conf
+  export HIVE_CONF_DIR=/tmp/lily-sandbox/conf
+  export HADOOP_CONF_DIR=/tmp/lily-sandbox/conf
+}

@@ -2,6 +2,7 @@ set ts=2 sw=2 et
 syn on
 set hls
 set cm=blowfish
+colo elflord
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 execute pathogen#infect()
