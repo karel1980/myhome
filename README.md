@@ -12,5 +12,5 @@ First steps:
 Fix any error you find by deleting the offending files and try again until success.
 Now restart your shell (or run exec bash).
 
-I use additional stow modules which are on Ubuntu One, see stow/bin/bin/stowit.sh.
+I use additional stow modules which are on Dropbox, see stow/bin/bin/stowit.sh.
 The environment variables for this script are in bash/.bashrc.d/10-env.sh

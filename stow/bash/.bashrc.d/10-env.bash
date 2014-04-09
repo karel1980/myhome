@@ -28,7 +28,7 @@ export SQOOP2_HOME=$CDH_DIR/sqoop2-1.99.2-cdh4.4.0
 export ZOOKEEPER_HOME=$CDH_DIR/zookeeper-3.4.5-cdh4.4.0
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
-export STOW_DATA_EXTRA=$HOME/"Ubuntu One"/personal/stowhome
+export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
 
 export M2_REPO=$HOME/.m2/repository
 export M2_HOME=$HOME/opt/apache-maven-3.0.5
@@ -158,7 +158,7 @@ function fack() {
 }
 
 function sandenv() {
-  export LILY_CONF_DIR=conf
+  export LILY_CONF_DIR=/home/karel/work/ngdata/lily3/conf
   export LILY_CLASSPATH=/tmp/lily-sandbox/conf
   export HIVE_CONF_DIR=/tmp/lily-sandbox/conf
   export HADOOP_CONF_DIR=/tmp/lily-sandbox/conf
