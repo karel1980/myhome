@@ -34,7 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>2</primaryMonitor>
+    <primaryMonitor>Mouse</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Fog-i</name>
+    <name>Fog-maths</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -164,7 +164,6 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>yes</noStrut>
-
     <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
@@ -219,9 +218,11 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-R"><action name="Reconfigure"/></keybind>
+    <keybind key="C-A-R">
+      <action name="Reconfigure"/>
+    </keybind>
     <keybind key="C-A-KP_8">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
@@ -230,7 +231,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_6">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>840</x>
         <y>0</y>
@@ -239,7 +240,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_2">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>525</y>
@@ -248,7 +249,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_4">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
@@ -257,7 +258,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_1">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>525</y>
@@ -266,7 +267,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_3">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>840</x>
         <y>525</y>
@@ -275,7 +276,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_7">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>0</x>
         <y>0</y>
@@ -284,7 +285,7 @@
       </action>
     </keybind>
     <keybind key="C-A-KP_9">
-      <action name="Unmaximize"></action>
+      <action name="Unmaximize"/>
       <action name="MoveResizeTo">
         <x>840</x>
         <y>0</y>
