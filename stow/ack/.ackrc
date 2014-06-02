@@ -1,5 +1,6 @@
 --ignore-dir=.idea
 --ignore-dir=node_modules
+--ignore-dir=deploy
 --type-set=iml=.iml
 --noiml
 --type-set=eproject=.project
