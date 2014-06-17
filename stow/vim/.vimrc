@@ -1,4 +1,4 @@
-set ts=2 sw=2 et
+set ts=4 sw=2 et
 syn on
 set hls
 set cm=blowfish
