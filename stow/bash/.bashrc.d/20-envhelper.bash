@@ -36,6 +36,10 @@ while [ -n "$1" ]; do
       export JAVA_HOME=/usr/lib/jvm/java-1.7.0-oracle
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
+    j8)
+      export JAVA_HOME=/usr/lib/jvm/java-1.8.0-oracle
+      [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
+      ;;
     awvd)
       export DAISY_HOME=$HOME/work/awv/awv-daisy/runtime/daisy
       [ -z "$silent" ] && echo DAISY_HOME=$DAISY_HOME
@@ -53,17 +57,15 @@ while [ -n "$1" ]; do
        [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
      m2)
-      path_remove /home/karel/opt/apache-maven-2.2.1/bin
-      path_remove /home/karel/opt/apache-maven-3.0.5/bin
-      path_prepend /home/karel/opt/apache-maven-2.2.1/bin
       export M2_HOME=$HOME/opt/apache-maven-2.2.1
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
       ;;
      m3)
-      path_remove /home/karel/opt/apache-maven-2.2.1/bin
-      path_remove /home/karel/opt/apache-maven-3.0.5/bin
-      path_prepend /home/karel/opt/apache-maven-3.0.5/bin
       export M2_HOME=$HOME/opt/apache-maven-3.0.5
+      [ -z "$silent" ] && echo M2_HOME=$M2_HOME
+       ;;
+     m32)
+      export M2_HOME=$HOME/opt/apache-maven-3.2.2
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)
@@ -101,6 +103,7 @@ done;
 
 path_remove /usr/lib/jvm/java-6-oracle
 path_remove /usr/lib/jvm/java-7-oracle
+path_remove /usr/lib/jvm/java-8-oracle
 if [ -n "$JAVA_HOME" ]; then
 	path_prepend $JAVA_HOME/bin
 fi
