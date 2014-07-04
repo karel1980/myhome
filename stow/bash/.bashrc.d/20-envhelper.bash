@@ -69,7 +69,7 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)
-       mo="$mo -Xmx1024m"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=1024m -Xmx1024m"
        ;;
      mM)
        mo="$mo -Xmx2048m"
