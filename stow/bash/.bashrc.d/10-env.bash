@@ -111,7 +111,7 @@ alias vi=vim
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 alias wget='wget -U "firefox"'
 alias xo='xdg-open'
-alias ymd='exiftool "-Directory<DateTimeOriginal" -d %Y/%m/%d .'
+alias ymd='exiftool "-Directory<DateTimeOriginal" -d %Y/%Y-%m-%d .'
 
 alias sl='ls'
 alias LS='ls'
