@@ -21,7 +21,7 @@ class base {
       'tmux', 'traceroute', 'tcpdump', 'thunderbird', 'tidy',
       'ubuntu-restricted-addons', 'ubuntu-restricted-extras', 'ubuntu-vm-builder', 'umlet', 'umbrello',
       'vim-gnome', 'vlc', 'virt-manager', 'vorbis-tools', 'vnstat', 'vinagre',
-      'wireshark', 'w3m', 'wmctrl',
+      'wireshark', 'w3m', 'wmctrl', 'wine', 'winetricks',
       'xchat', 'xdiskusage', 'xmlstarlet', 'xpdf', 'xclip',
       ]
 
