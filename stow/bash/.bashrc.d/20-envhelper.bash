@@ -15,9 +15,9 @@ Where config is one of:
   d24rc1  (daisy 2.4-RC1)
   mc      (clear maven opts)
   md      (maven opts for debugging (port 5005))
-  mm      (maven opts: 1024m)
+  mm      (maven opts: 2048m)
   mM      (maven opts: 2048m)
-  mp      (maven opts: 1024m permgen)
+  mp      (maven opts: 2048m permgen)
   show    (show DAISY_HOME and MAVEN_HOME)"
 
 local moc
@@ -69,13 +69,13 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=1024m -Xmx1024m"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2024m -Xmx2024m"
        ;;
      mM)
        mo="$mo -Xmx2048m"
        ;;
      mp)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=1024m"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2024m"
        ;;
      md)
        mo="$mo -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y"
