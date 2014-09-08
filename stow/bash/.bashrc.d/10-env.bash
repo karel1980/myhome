@@ -12,20 +12,21 @@ export SOLR_HOME=$HOME/opt/solr-4.6.0
 export UTS_SRC=$HOME/work/mix/uts
 
 #CDH stuff
-export CDH_DIR=$HOME/opt/cdh4.4.0
-export FLUME_HOME=$CDH_DIR/apache-flume-1.4.0-cdh4.4.0-bin
-export DATAFU_HOME=$CDH_DIR/datafu-0.0.4-cdh4.4.0
-export HADOOP_HOME=$CDH_DIR/hadoop-2.0.0-cdh4.4.0
-export HBASE_HOME=$CDH_DIR/hbase-0.94.6-cdh4.4.0
-export HCATALOG_HOME=$CDH_DIR/hcatalog-0.5.0-cdh4.4.0
-export HIVE_HOME=$CDH_DIR/hive-0.10.0-cdh4.4.0
-export MAHOUT_HOME=$CDH_DIR/mahout-0.7-cdh4.4.0
-export OOZIE_HOME=$CDH_DIR/oozie-3.3.2-cdh4.4.0
-export PIG_HOME=$CDH_DIR/pig-0.11.0-cdh4.4.0
-export SENTRY_HOME=$CDH_DIR/sentry-1.1.0-cdh4.4.0
-export SQOOP_HOME=$CDH_DIR/sqoop-1.4.3-cdh4.4.0
-export SQOOP2_HOME=$CDH_DIR/sqoop2-1.99.2-cdh4.4.0
-export ZOOKEEPER_HOME=$CDH_DIR/zookeeper-3.4.5-cdh4.4.0
+export CDH_VER=5.1.0
+export CDH_DIR=$HOME/opt/cdh$CDH_VER
+export FLUME_HOME=$CDH_DIR/apache-flume-1.4.0-cdh${CDH_VER}-bin
+export DATAFU_HOME=$CDH_DIR/datafu-0.0.4-cdh${CDH_VER}
+export HADOOP_HOME=$CDH_DIR/hadoop-2.0.0-cdh${CDH_VER}
+export HBASE_HOME=$CDH_DIR/hbase-0.94.6-cdh${CDH_VER}
+export HCATALOG_HOME=$CDH_DIR/hcatalog-0.5.0-cdh${CDH_VER}
+export HIVE_HOME=$CDH_DIR/hive-0.10.0-cdh${CDH_VER}
+export MAHOUT_HOME=$CDH_DIR/mahout-0.7-cdh${CDH_VER}
+export OOZIE_HOME=$CDH_DIR/oozie-3.3.2-cdh${CDH_VER}
+export PIG_HOME=$CDH_DIR/pig-0.11.0-cdh${CDH_VER}
+export SENTRY_HOME=$CDH_DIR/sentry-1.1.0-cdh${CDH_VER}
+export SQOOP_HOME=$CDH_DIR/sqoop-1.4.3-cdh${CDH_VER}
+export SQOOP2_HOME=$CDH_DIR/sqoop2-1.99.2-cdh${CDH_VER}
+export ZOOKEEPER_HOME=$CDH_DIR/zookeeper-3.4.5-cdh${CDH_VER}
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
@@ -91,6 +92,7 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$KETTLE_HOME"
 export PATH="$PATH:$JMETER_HOME/bin"
 export PATH="$PATH:$HOME/opt/idea/bin"
+export PATH="$PATH:/opt/Scratch 2/bin"
 
 alias ack=ack-grep
 alias addpi='echo `pwd`>>$HOME/.pi'
