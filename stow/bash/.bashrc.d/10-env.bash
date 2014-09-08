@@ -156,6 +156,7 @@ function fack() {
   shift
   find . -name "$name" -exec ack-grep "$@" {} +
 }
+alias please='sudo $(history -p \!\!)' 
 
 function sandenv() {
   export LILY_CONF_DIR=/home/karel/work/ngdata/lily3/conf
