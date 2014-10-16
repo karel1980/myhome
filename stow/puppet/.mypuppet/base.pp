@@ -11,7 +11,7 @@ class base {
       'imagemagick', 'inkscape', 'iotop', 'irssi', 'iamcli',
       'jruby', 'jython',
       'libvirt-bin', 'libavcodec-dev', 'libimage-exiftool-perl', 'libsmbclient', 'libxml2-utils', 'ldap-utils', 'libpam-smbpass', 'libnet-dbus-glib-perl', 'links',
-      'mysql-server', 'mpg321', 'mc', 'mercurial', 'moreutils', 'mcollective-client', 'most', 'musescore', 'markdown',
+      'mysql-server', 'mpg321', 'mc', 'mercurial', 'moreutils', 'mcollective-client', 'most', 'musescore', 'markdown', 'meshlab',
       'nmap', 'network-manager-strongswan', 'npm', 'node-mustache',
       'ogmrip', 'openjdk-6-jdk', 'openjdk-7-doc', 'openjdk-7-jdk', 'openjdk-7-source', 'openshot', 'openssh-server', 'octave', 'octave-tsa', 'openscad', 'openbox', 'obconf',
       'p7zip', 'p7zip-full', 'pssh', 'pdftk', 'pexec', 'pavucontrol', 'python-xmpp', 'pastebinit', 'pandoc', 'python-setuptools', 'python-dev',

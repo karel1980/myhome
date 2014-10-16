@@ -109,5 +109,27 @@ if [ -n "$JAVA_HOME" ]; then
 fi
 }
 
+function cdh460() {
+
+export CDH_HOME=$HOME/opt/cdh4.6.0
+export HADOOP_HOME=$CDH_HOME/hadoop-2.0.0-cdh4.6.0
+#$CDH_HOME/sqoop-1.4.3-cdh4.6.0
+#$CDH_HOME/sqoop2-1.99.2-cdh4.6.0
+#$CDH_HOME/datafu-0.0.4-cdh4.6.0
+#$CDH_HOME/hcatalog-0.5.0-cdh4.6.0
+#$CDH_HOME/hbase-0.94.15-cdh4.6.0
+#$CDH_HOME/apache-flume-1.4.0-cdh4.6.0-bin
+#$CDH_HOME/sentry-1.1.0-cdh4.6.0
+#$CDH_HOME/zookeeper-3.4.5-cdh4.6.0
+#$CDH_HOME/parquet-1.2.5-cdh4.6.0
+#$CDH_HOME/pig-0.11.0-cdh4.6.0
+#$CDH_HOME/hue-2.5.0-cdh4.6.0
+#$CDH_HOME/mahout-0.7-cdh4.6.0
+#$CDH_HOME/hive-0.10.0-cdh4.6.0
+#$CDH_HOME/whirr-0.8.2-cdh4.6.0
+}
+
 me s m3 mm j7
+
+cdh460
 

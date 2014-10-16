@@ -5,7 +5,7 @@ export GRADLE_HOME="$HOME/opt/gradle-1.6"
 
 export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
 export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
-export LILY_SRC=$HOME/work/ngdata/lily
+export LILY_SRC=$HOME/work/ngdata/lily3
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
 export SOLR_HOME=$HOME/opt/solr-4.6.0
@@ -17,7 +17,7 @@ export CDH_DIR=$HOME/opt/cdh$CDH_VER
 export FLUME_HOME=$CDH_DIR/apache-flume-1.4.0-cdh${CDH_VER}-bin
 export DATAFU_HOME=$CDH_DIR/datafu-0.0.4-cdh${CDH_VER}
 export HADOOP_HOME=$CDH_DIR/hadoop-2.0.0-cdh${CDH_VER}
-export HBASE_HOME=$CDH_DIR/hbase-0.94.6-cdh${CDH_VER}
+export HBASE_HOME=$CDH_DIR/base-0.98.1-cdh${CDH_VER}
 export HCATALOG_HOME=$CDH_DIR/hcatalog-0.5.0-cdh${CDH_VER}
 export HIVE_HOME=$CDH_DIR/hive-0.10.0-cdh${CDH_VER}
 export MAHOUT_HOME=$CDH_DIR/mahout-0.7-cdh${CDH_VER}
