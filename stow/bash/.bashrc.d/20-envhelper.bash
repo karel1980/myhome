@@ -101,6 +101,77 @@ while [ -n "$1" ]; do
 done;
 [ -n "$moc$mo" ] && MAVEN_OPTS="${mo:1}" && export MAVEN_OPTS && [ -z "$silent" ] && echo MAVEN_OPTS=$MAVEN_OPTS
 
+function cdh460() {
+    #remove_cdh_from_path
+    export CDH_VER=4.6.0
+    export CDH_HOME=$HOME/opt/cdh$CDH_VER
+    export DATAFU_HOME=$CDH_HOME/datafu-0.0.4-cdh${CDH_VER}
+    export FLUME_HOME=$CDH_HOME/flume-ng-1.4.0-cdh${CDH_VER}
+    export HADOOP_HOME=$CDH_HOME/hadoop-2.0.0-cdh${CDH_VER}
+    export HBASE_HOME=$CDH_HOME/hbase-0.94.15-cdh${CDH_VER}
+    export HCATALOG_HOME=$CDH_HOME/hcatalog-0.5.0-cdh${CDH_VER}
+    export HIVE_HOME=$CDH_HOME/hive-0.10.0-cdh${CDH_VER}
+    export HUE_HOME=$CDH_HOME/hue-2.5.0-cdh${CDH_VER}
+    export MAHOUT_HOME=$CDH_HOME/mahout-0.7-cdh${CDH_VER}
+    export PARQUET_HOME=$CDH_HOME/parquet-1.2.5-cdh${CDH_VER}
+    export PIG_HOME=$CDH_HOME/pig-0.11.0-cdh${CDH_VER}
+    export SENTRY_HOME=$CDH_HOME/sentry-1.1.0-cdh${CDH_VER}
+    export SQOOP_HOME=$CDH_HOME/sqoop-1.4.3-cdh${CDH_VER}
+    export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.2-cdh${CDH_VER}
+    export WHIRR_HOME=$CDH_HOME/whirr-0.8.2-cdh${CDH_VER}
+    export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+}
+
+#CDH stuff
+function cdh510() {
+    #remove_cdh_from_path
+    export CDH_VER=5.1.0
+    export CDH_HOME=$HOME/opt/cdh$CDH_VER
+    export FLUME_HOME=$CDH_HOME/apache-flume-1.4.0-cdh${CDH_VER}-bin
+    export DATAFU_HOME=$CDH_HOME/datafu-0.0.4-cdh${CDH_VER}
+    export HADOOP_HOME=$CDH_HOME/hadoop-2.0.0-cdh${CDH_VER}
+    export HBASE_HOME=$CDH_HOME/base-0.98.1-cdh${CDH_VER}
+    export HCATALOG_HOME=$CDH_HOME/hcatalog-0.5.0-cdh${CDH_VER}
+    export HIVE_HOME=$CDH_HOME/hive-0.10.0-cdh${CDH_VER}
+    export MAHOUT_HOME=$CDH_HOME/mahout-0.7-cdh${CDH_VER}
+    export OOZIE_HOME=$CDH_HOME/oozie-3.3.2-cdh${CDH_VER}
+    export PIG_HOME=$CDH_HOME/pig-0.11.0-cdh${CDH_VER}
+    export SENTRY_HOME=$CDH_HOME/sentry-1.1.0-cdh${CDH_VER}
+    export SQOOP_HOME=$CDH_HOME/sqoop-1.4.3-cdh${CDH_VER}
+    export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.2-cdh${CDH_VER}
+    export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+}
+
+#CDH stuff
+function cdh512() {
+    #remove_cdh_from_path
+    export CDH_VER=5.1.2
+    export CDH_HOME=$HOME/opt/cdh$CDH_VER
+    export AVRO_HOME=$CDH_HOME/avro-1.7.5-cdh${CDH_VER}
+    export CRUNCH_HOME=$CDH_HOME/crunch-0.10.0-cdh${CDH_VER}
+    export DATAFU_HOME=$CDH_HOME/datafu-1.1.0-cdh${CDH_VER}
+    export FLUME_HOME=$CDH_HOME/flume-ng-1.5.0-cdh${CDH_VER}
+    export HADOOP_HOME=$CDH_HOME/hadoop-2.3.0-cdh${CDH_VER}
+    export HBASE_HOME=$CDH_HOME/hbase-0.98.1-cdh${CDH_VER}
+    export HBASE_HOME=$CDH_HOME/hbase-solr-1.5-cdh${CDH_VER}
+    export HIVE_HOME=$CDH_HOME/hive-0.12.0-cdh${CDH_VER}
+    export HUE_HOME=$CDH_HOME/hue-3.6.0-cdh${CDH_VER}
+    export KITE_HOME=$CDH_HOME/kite-0.10.0-cdh${CDH_VER}
+    export LLAMA_HOME=$CDH_HOME/llama-1.0.0-cdh${CDH_VER}
+    export MAHOUT_HOME=$CDH_HOME/mahout-0.9-cdh${CDH_VER}
+    export PARQUET_HOME=$CDH_HOME/parquet-1.2.5-cdh${CDH_VER}
+    export PARQUET_HOME=$CDH_HOME/parquet-format-1.0.0-cdh${CDH_VER}
+    export PIG_HOME=$CDH_HOME/pig-0.12.0-cdh${CDH_VER}
+    export SEARCH_HOME=$CDH_HOME/search-1.0.0-cdh${CDH_VER}
+    export SENTRY_HOME=$CDH_HOME/sentry-1.3.0-cdh${CDH_VER}
+    export SOLR_HOME=$CDH_HOME/solr-4.4.0-cdh${CDH_VER}
+    export SPARK_HOME=$CDH_HOME/spark-1.0.0-cdh${CDH_VER}
+    export SQOOP_HOME=$CDH_HOME/sqoop-1.4.4-cdh${CDH_VER}
+    export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.3-cdh${CDH_VER}
+    export WHIRR_HOME=$CDH_HOME/whirr-0.9.0-cdh${CDH_VER}
+    export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+}
+
 path_remove /usr/lib/jvm/java-6-oracle
 path_remove /usr/lib/jvm/java-7-oracle
 path_remove /usr/lib/jvm/java-8-oracle
@@ -109,27 +180,7 @@ if [ -n "$JAVA_HOME" ]; then
 fi
 }
 
-function cdh460() {
-
-export CDH_HOME=$HOME/opt/cdh4.6.0
-export HADOOP_HOME=$CDH_HOME/hadoop-2.0.0-cdh4.6.0
-#$CDH_HOME/sqoop-1.4.3-cdh4.6.0
-#$CDH_HOME/sqoop2-1.99.2-cdh4.6.0
-#$CDH_HOME/datafu-0.0.4-cdh4.6.0
-#$CDH_HOME/hcatalog-0.5.0-cdh4.6.0
-#$CDH_HOME/hbase-0.94.15-cdh4.6.0
-#$CDH_HOME/apache-flume-1.4.0-cdh4.6.0-bin
-#$CDH_HOME/sentry-1.1.0-cdh4.6.0
-#$CDH_HOME/zookeeper-3.4.5-cdh4.6.0
-#$CDH_HOME/parquet-1.2.5-cdh4.6.0
-#$CDH_HOME/pig-0.11.0-cdh4.6.0
-#$CDH_HOME/hue-2.5.0-cdh4.6.0
-#$CDH_HOME/mahout-0.7-cdh4.6.0
-#$CDH_HOME/hive-0.10.0-cdh4.6.0
-#$CDH_HOME/whirr-0.8.2-cdh4.6.0
-}
-
 me s m3 mm j7
-
 cdh460
+
 

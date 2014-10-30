@@ -3,6 +3,7 @@ export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
 export GRADLE_HOME="$HOME/opt/gradle-1.6"
 
+export PSTOOLS_HOME=$HOME/work/ngdata/ps-tools
 export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
 export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
 export LILY_SRC=$HOME/work/ngdata/lily3
@@ -10,23 +11,6 @@ export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
 export SOLR_HOME=$HOME/opt/solr-4.6.0
 export UTS_SRC=$HOME/work/mix/uts
-
-#CDH stuff
-export CDH_VER=5.1.0
-export CDH_DIR=$HOME/opt/cdh$CDH_VER
-export FLUME_HOME=$CDH_DIR/apache-flume-1.4.0-cdh${CDH_VER}-bin
-export DATAFU_HOME=$CDH_DIR/datafu-0.0.4-cdh${CDH_VER}
-export HADOOP_HOME=$CDH_DIR/hadoop-2.0.0-cdh${CDH_VER}
-export HBASE_HOME=$CDH_DIR/base-0.98.1-cdh${CDH_VER}
-export HCATALOG_HOME=$CDH_DIR/hcatalog-0.5.0-cdh${CDH_VER}
-export HIVE_HOME=$CDH_DIR/hive-0.10.0-cdh${CDH_VER}
-export MAHOUT_HOME=$CDH_DIR/mahout-0.7-cdh${CDH_VER}
-export OOZIE_HOME=$CDH_DIR/oozie-3.3.2-cdh${CDH_VER}
-export PIG_HOME=$CDH_DIR/pig-0.11.0-cdh${CDH_VER}
-export SENTRY_HOME=$CDH_DIR/sentry-1.1.0-cdh${CDH_VER}
-export SQOOP_HOME=$CDH_DIR/sqoop-1.4.3-cdh${CDH_VER}
-export SQOOP2_HOME=$CDH_DIR/sqoop2-1.99.2-cdh${CDH_VER}
-export ZOOKEEPER_HOME=$CDH_DIR/zookeeper-3.4.5-cdh${CDH_VER}
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
@@ -93,6 +77,7 @@ export PATH="$PATH:$KETTLE_HOME"
 export PATH="$PATH:$JMETER_HOME/bin"
 export PATH="$PATH:$HOME/opt/idea/bin"
 export PATH="$PATH:/opt/Scratch 2/bin"
+export PATH="$PATH:$PSTOOLS_HOME/bin"
 
 alias ack=ack-grep
 alias addpi='echo `pwd`>>$HOME/.pi'
@@ -165,4 +150,8 @@ function sandenv() {
   export LILY_CLASSPATH=/tmp/lily-sandbox/conf
   export HIVE_CONF_DIR=/tmp/lily-sandbox/conf
   export HADOOP_CONF_DIR=/tmp/lily-sandbox/conf
+  if [ -e /tmp/lily-sandbox/bookmarks.env ]; then
+    . /tmp/lily-sandbox/bookmarks.env
+    cat /tmp/lily-sandbox/bookmarks.env
+  fi
 }
