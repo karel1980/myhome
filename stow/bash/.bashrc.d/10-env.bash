@@ -1,7 +1,6 @@
 export EDITOR=vim
 export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
-export GRADLE_HOME="$HOME/opt/gradle-1.6"
 
 export PSTOOLS_HOME=$HOME/work/ngdata/ps-tools
 export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
@@ -33,7 +32,7 @@ export EC2_URL=https://ec2.us-east-1.amazonaws.com
 #export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 export GRIFFON_HOME=$HOME/opt/griffon-1.1.0
-export GRADLE_HOME=$HOME/opt/gradle-1.6
+export GRADLE_HOME="$HOME/opt/gradle-2.2.1"
 
 export ANDROID_HOME=$HOME/opt/android-sdk-linux
 

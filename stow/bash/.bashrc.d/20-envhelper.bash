@@ -101,6 +101,14 @@ while [ -n "$1" ]; do
 done;
 [ -n "$moc$mo" ] && MAVEN_OPTS="${mo:1}" && export MAVEN_OPTS && [ -z "$silent" ] && echo MAVEN_OPTS=$MAVEN_OPTS
 
+function add_hdfs_to_path() {
+  # remove it if it's already in the path
+  which hdfs && path_remove $(dirname $(which hdfs))
+
+  # add it
+  export PATH="$HADOOP_HOME/bin:$PATH"
+}
+
 function cdh460() {
     #remove_cdh_from_path
     export CDH_VER=4.6.0
@@ -120,9 +128,10 @@ function cdh460() {
     export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.2-cdh${CDH_VER}
     export WHIRR_HOME=$CDH_HOME/whirr-0.8.2-cdh${CDH_VER}
     export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+
+    add_hdfs_to_path
 }
 
-#CDH stuff
 function cdh510() {
     #remove_cdh_from_path
     export CDH_VER=5.1.0
@@ -140,9 +149,10 @@ function cdh510() {
     export SQOOP_HOME=$CDH_HOME/sqoop-1.4.3-cdh${CDH_VER}
     export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.2-cdh${CDH_VER}
     export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+
+    add_hdfs_to_path
 }
 
-#CDH stuff
 function cdh512() {
     #remove_cdh_from_path
     export CDH_VER=5.1.2
@@ -170,6 +180,8 @@ function cdh512() {
     export SQOOP2_HOME=$CDH_HOME/sqoop2-1.99.3-cdh${CDH_VER}
     export WHIRR_HOME=$CDH_HOME/whirr-0.9.0-cdh${CDH_VER}
     export ZOOKEEPER_HOME=$CDH_HOME/zookeeper-3.4.5-cdh${CDH_VER}
+
+    add_hdfs_to_path
 }
 
 path_remove /usr/lib/jvm/java-6-oracle
