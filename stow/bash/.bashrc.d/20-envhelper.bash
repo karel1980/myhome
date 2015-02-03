@@ -192,7 +192,7 @@ if [ -n "$JAVA_HOME" ]; then
 fi
 }
 
-me s m3 mm j7
+me s m3 mm
 cdh460
 
 
