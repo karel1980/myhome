@@ -69,13 +69,10 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2024m -Xmx2024m"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g"
        ;;
      mM)
-       mo="$mo -Xmx2048m"
-       ;;
-     mp)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2024m"
+       mo="$mo -Xmx3g"
        ;;
      md)
        mo="$mo -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y"

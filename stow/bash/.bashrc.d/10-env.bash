@@ -9,7 +9,7 @@ export LILY_SRC=$HOME/work/ngdata/lily3
 export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
 export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
 export SOLR_HOME=$HOME/opt/solr-4.6.0
-export UTS_SRC=$HOME/work/mix/uts
+export UTS_SRC=$HOME/work/ngdata/uts
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
