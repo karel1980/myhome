@@ -69,7 +69,7 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      mm)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g -XX:ReservedCodeCacheSize=256m"
        ;;
      mM)
        mo="$mo -Xmx3g"
@@ -189,7 +189,5 @@ if [ -n "$JAVA_HOME" ]; then
 fi
 }
 
-me s m3 mm
-cdh460
-
+me s m3 mm j7
 

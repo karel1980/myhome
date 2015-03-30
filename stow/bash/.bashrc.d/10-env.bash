@@ -32,7 +32,7 @@ export EC2_URL=https://ec2.us-east-1.amazonaws.com
 #export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 export GRIFFON_HOME=$HOME/opt/griffon-1.1.0
-export GRADLE_HOME="$HOME/opt/gradle-2.2.1"
+export GRADLE_HOME="$HOME/opt/gradle-2.3"
 
 export ANDROID_HOME=$HOME/opt/android-sdk-linux
 
@@ -58,11 +58,6 @@ export JMETER_HOME="$HOME/opt/apache-jmeter-2.9"
 
 export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 export PATH="$PATH:$GRIFFON_HOME/bin"
-export PATH="$PATH:$HADOOP_HOME/bin"
-export PATH="$PATH:$ZOOKEEPER_HOME/bin"
-export PATH="$PATH:$HBASE_HOME/bin"
-export PATH="$PATH:$HIVE_HOME/bin"
-export PATH="$PATH:$FLUME_HOME/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/opt/eclipse"
 export PATH="$PATH:$MAVEN_HOME/bin"
