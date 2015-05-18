@@ -81,6 +81,9 @@ while [ -n "$1" ]; do
        moc=1
        mo=""
        ;;
+     yjp)
+       mo="$mo -agentpath:$HOME/opt/yjp-2014-build-14116/bin/linux-x86-64/libyjpagent.so"
+       ;;
      projx)
       mvn archetype:generate -DarchetypeGroupId=daisy -DarchetypeArtifactId=sample-project -DarchetypeVersion=$2 -DgroupId=com.example -DartifactId=projx -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
       shift
@@ -184,9 +187,6 @@ function cdh512() {
 path_remove /usr/lib/jvm/java-6-oracle
 path_remove /usr/lib/jvm/java-7-oracle
 path_remove /usr/lib/jvm/java-8-oracle
-if [ -n "$JAVA_HOME" ]; then
-	path_prepend $JAVA_HOME/bin
-fi
 }
 
 me s m3 mm j7

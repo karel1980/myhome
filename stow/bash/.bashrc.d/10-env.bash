@@ -36,6 +36,8 @@ export GRADLE_HOME="$HOME/opt/gradle-2.3"
 
 export ANDROID_HOME=$HOME/opt/android-sdk-linux
 
+export PROTOBUF_HOME=/home/karel/dl/protobuf-2.5.0
+
 function awv() {
   export DAISY_HOME=$HOME/work/awv/awv-daisy/runtime/daisy
 }
@@ -72,6 +74,7 @@ export PATH="$PATH:$JMETER_HOME/bin"
 export PATH="$PATH:$HOME/opt/idea/bin"
 export PATH="$PATH:/opt/Scratch 2/bin"
 export PATH="$PATH:$PSTOOLS_HOME/bin"
+export PATH="$PATH:$PROTOBUF_HOME/bin"
 
 alias ack=ack-grep
 alias addpi='echo `pwd`>>$HOME/.pi'
