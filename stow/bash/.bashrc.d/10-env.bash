@@ -2,20 +2,10 @@ export EDITOR=vim
 export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
 
-export PSTOOLS_HOME=$HOME/work/ngdata/ps-tools
-export CONSUMERDB_SRC=$HOME/work/ngdata/consumerdb
-export SCHEMATOOLS_SRC=$HOME/work/ngdata/lily-schematools
-export LILY_SRC=$HOME/work/ngdata/lily3
-export LILY_ETL_SRC=$HOME/work/ngdata/lily-etl
-export HBASE_INDEXER_SRC=$HOME/work/ngdata/hbase-indexer
 export SOLR_HOME=$HOME/opt/solr-4.6.0
-export UTS_SRC=$HOME/work/ngdata/uts
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
-
-export M2_REPO=$HOME/.m2/repository
-export M2_HOME=$HOME/opt/apache-maven-3.0.5
 
 export CHROMIUM_ROOT=$HOME/work/persoonlijk/chromium
 export GAE_HOME=$HOME/opt/appengine-java-sdk-1.3.4
@@ -23,13 +13,10 @@ export GAE_HOME=$HOME/opt/appengine-java-sdk-1.3.4
 export CREPO=$HOME/work/misc/crepo/crepo.py
 export ROOT=$HOME/work/misc/hue
 
-export DEBEMAIL="karel@ngdata.com"
+export DEBEMAIL="karel.vervaeke@aca-it.be"
 export DEBFULLNAME="Karel Vervaeke"
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
-export EC2_URL=https://ec2.us-east-1.amazonaws.com
-#export EC2_URL=https://ec2.eu-west-1.amazonaws.com
 
 export GRIFFON_HOME=$HOME/opt/griffon-1.1.0
 export GRADLE_HOME="$HOME/opt/gradle-2.3"
@@ -62,7 +49,6 @@ export PATH=$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/b
 export PATH="$PATH:$GRIFFON_HOME/bin"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/opt/eclipse"
-export PATH="$PATH:$MAVEN_HOME/bin"
 export PATH="$PATH:/var/lib/gems/1.8/bin"
 export PATH="$PATH:$PATH"
 export PATH="$PATH:$GRADLE_HOME/bin"
@@ -114,41 +100,7 @@ alias z='notify-send'
 alias e='nautilus .'
 alias pw='tail ~/.ng-mix-*'
 
-export KAURI_HOME=$HOME/work/ngdata/kauri
 export AWS_DEFAULT_REGION=us-east-1
 
-function ec2sel() {
-    if [ -z "$1" ]; then
-      1=last
-      return
-    fi
-      
-    if [ ! -e "$HOME/.ec2/$1" ]; then
-      echo "~/.ec2/$1 does not exist"
-      return
-    fi
-
-    . "$HOME/.ec2/$1" 
-    if [ "$1" != "last" ]; then
-      ln -sf "$HOME/.ec2/$1" "$HOME/.ec2/last"
-    fi
-}
-ec2sel last
-
-function fack() {
-  local name=$1
-  shift
-  find . -name "$name" -exec ack-grep "$@" {} +
-}
 alias please='sudo $(history -p \!\!)' 
 
-function sandenv() {
-  export LILY_CONF_DIR=/home/karel/work/ngdata/lily3/conf
-  export LILY_CLASSPATH=/tmp/lily-sandbox/conf
-  export HIVE_CONF_DIR=/tmp/lily-sandbox/conf
-  export HADOOP_CONF_DIR=/tmp/lily-sandbox/conf
-  if [ -e /tmp/lily-sandbox/bookmarks.env ]; then
-    . /tmp/lily-sandbox/bookmarks.env
-    cat /tmp/lily-sandbox/bookmarks.env
-  fi
-}

@@ -7,7 +7,6 @@ function me() {
   [ -z $1 ] && echo "Usage me <config> ... 
 Where config is one of:
   s       (silent - suppresses env variable feedback)
-  j6      (set JAVA_HOME to java 6 oracle)
   j7      (set JAVA_HOME to java 7 oracle)
   awvd    (awv-daisy env)
   awvp    (awv-app env)
@@ -28,40 +27,17 @@ while [ -n "$1" ]; do
      s)
        silent="1"
        ;;
-    j6)
-      export JAVA_HOME=/usr/lib/jvm/java-1.6.0-oracle
-      [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
-      ;;
     j7)
-      export JAVA_HOME=/usr/lib/jvm/java-1.7.0-oracle
+      export JAVA_HOME=$(/usr/libexec/java_home)
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
     j8)
       export JAVA_HOME=/usr/lib/jvm/java-1.8.0-oracle
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
-    awvd)
-      export DAISY_HOME=$HOME/work/awv/awv-daisy/runtime/daisy
-      [ -z "$silent" ] && echo DAISY_HOME=$DAISY_HOME
-      ;;
-    awvp)
-      export DAISY_HOME=$HOME/work/awv/awv-app/daisy
-      [ -z "$silent" ] && echo DAISY_HOME=$DAISY_HOME
-      ;;
-     m11)
-       export MAVEN_HOME=$HOME/opt/maven-1.1
-       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
-       ;;
-     m102)
-       export MAVEN_HOME=$HOME/opt/maven-1.0.2
-       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
-       ;;
-     m2)
-      export M2_HOME=$HOME/opt/apache-maven-2.2.1
-      [ -z "$silent" ] && echo M2_HOME=$M2_HOME
-      ;;
      m3)
       export M2_HOME=$HOME/opt/apache-maven-3.0.5
+      path_prepend $M2_HOME/bin
       [ -z "$silent" ] && echo M2_HOME=$M2_HOME
        ;;
      m32)

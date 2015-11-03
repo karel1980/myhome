@@ -5,8 +5,6 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-shopt -s autocd
-
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
@@ -103,6 +101,11 @@ export HISTFILESIZE
 
 for rcfile in ~/.bashrc.d/*.bash; do
     . $rcfile
+done
+for rcfile in ~/.bashrc_${HOSTNAME}.d/*.bash; do
+    if [ -e "$rcfile" ]; then
+      . $rcfile
+    fi
 done
 
 (cd $HOME/work/personal/myhome; git status --short)
