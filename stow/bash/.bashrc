@@ -3,7 +3,9 @@
 # for examples
 
 # If not running interactively, don't do anything
+echo "in bashrc"
 [ -z "$PS1" ] && return
+echo "still in bashrc"
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace

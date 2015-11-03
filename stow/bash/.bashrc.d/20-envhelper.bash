@@ -16,8 +16,7 @@ Where config is one of:
   md      (maven opts for debugging (port 5005))
   mm      (maven opts: 2048m)
   mM      (maven opts: 2048m)
-  mp      (maven opts: 2048m permgen)
-  show    (show DAISY_HOME and MAVEN_HOME)"
+  mp      (maven opts: 2048m permgen)"
 
 local moc
 local mo
@@ -36,13 +35,13 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
      m3)
-      export M2_HOME=$HOME/opt/apache-maven-3.0.5
-      path_prepend $M2_HOME/bin
-      [ -z "$silent" ] && echo M2_HOME=$M2_HOME
+      export MAVEN_HOME=$HOME/opt/apache-maven-3.0.5
+      path_prepend $MAVEN_HOME/bin
+      [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
      m32)
-      export M2_HOME=$HOME/opt/apache-maven-3.2.2
-      [ -z "$silent" ] && echo M2_HOME=$M2_HOME
+      export MAVEN_HOME=$HOME/opt/apache-maven-3.2.2
+      [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
      mm)
        mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g -XX:ReservedCodeCacheSize=256m"
@@ -64,11 +63,6 @@ while [ -n "$1" ]; do
       mvn archetype:generate -DarchetypeGroupId=daisy -DarchetypeArtifactId=sample-project -DarchetypeVersion=$2 -DgroupId=com.example -DartifactId=projx -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
       shift
       ;;
-     show)
-       echo "JAVA_HOME=$JAVA_HOME"
-       echo "DAISY_HOME=$DAISY_HOME"
-       echo "MAVEN_OPTS=$MAVEN_OPTS"
-       ;;
      *)
        echo "ignoring option $1"
     esac

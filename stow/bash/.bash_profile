@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
-fi
-
 # Load RVM, if you are using it
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
@@ -15,10 +11,10 @@ export BASH_IT=$HOME/.bash_it
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='standard'
+export BASH_IT_THEME='bobby'
 
 # Your place for hosting Git repos. I use this for private repos.
-export GIT_HOSTING='git@git.domain.com'
+#export GIT_HOSTING='git@git.domain.com'
 
 # Set my editor and git editor
 export EDITOR="/usr/bin/vim"
@@ -46,6 +42,4 @@ export TODO="t"
 # Load Bash It
 source $BASH_IT/bash_it.sh
 
-# Added by Canopy installer on 2015-11-02
-# VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
-VIRTUAL_ENV_DISABLE_PROMPT=1 source '/Users/karelvervaeke/Library/Enthought/Canopy_64bit/User/bin/activate'
+[[ -r ~/.bashrc ]] && . ~/.bashrc
