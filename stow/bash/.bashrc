@@ -3,9 +3,7 @@
 # for examples
 
 # If not running interactively, don't do anything
-echo "in bashrc"
 [ -z "$PS1" ] && return
-echo "still in bashrc"
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
@@ -101,13 +99,13 @@ set HISTFILESIZE=10000000
 export HISTSIZE
 export HISTFILESIZE
 
-for rcfile in ~/.bashrc.d/*.bash; do
-    . $rcfile
-done
 for rcfile in ~/.bashrc_${HOSTNAME}.d/*.bash; do
     if [ -e "$rcfile" ]; then
       . $rcfile
     fi
+done
+for rcfile in ~/.bashrc.d/*.bash; do
+    . $rcfile
 done
 
 (cd $HOME/work/personal/myhome; git status --short)

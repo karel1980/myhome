@@ -27,11 +27,11 @@ while [ -n "$1" ]; do
        silent="1"
        ;;
     j7)
-      export JAVA_HOME=$(/usr/libexec/java_home)
+      export JAVA_HOME=$ENV_J7_HOME
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
     j8)
-      export JAVA_HOME=/usr/lib/jvm/java-1.8.0-oracle
+      export JAVA_HOME=$ENV_J8_HOME
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
      m3)
