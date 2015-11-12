@@ -1,5 +1,5 @@
 [user]
-	email = karel@ngdata.com
+	email = karel.vervaeke@aca-it.be
 	name = Karel Vervaeke
 [core]
 	excludesfile = /home/karel/.gitignore_global

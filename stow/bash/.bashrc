@@ -99,11 +99,10 @@ set HISTFILESIZE=10000000
 export HISTSIZE
 export HISTFILESIZE
 
-for rcfile in ~/.bashrc_${HOSTNAME}.d/*.bash; do
-    if [ -e "$rcfile" ]; then
-      . $rcfile
-    fi
-done
+if [ -e $HOME/.bashrc_env ]; then
+    . $HOME/.bashrc_env
+fi
+
 for rcfile in ~/.bashrc.d/*.bash; do
     . $rcfile
 done
