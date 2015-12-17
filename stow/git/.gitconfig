@@ -2,7 +2,7 @@
 	email = karel.vervaeke@aca-it.be
 	name = Karel Vervaeke
 [core]
-	excludesfile = /home/karel/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all

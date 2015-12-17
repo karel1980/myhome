@@ -10,6 +10,7 @@ maven-eclipse.xml
 *.swp
 *.pyc
 *~
+.eslintrc
 
 # Created by https://www.gitignore.io/api/osx,maven,eclipse,intellij
 
