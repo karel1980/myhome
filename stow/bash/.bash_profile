@@ -43,3 +43,5 @@ export TODO="t"
 source $BASH_IT/bash_it.sh
 
 [[ -r ~/.bashrc ]] && . ~/.bashrc
+
+source ~/.docker-machine-env.sh
