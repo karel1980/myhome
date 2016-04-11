@@ -111,5 +111,6 @@ done
 
 PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
