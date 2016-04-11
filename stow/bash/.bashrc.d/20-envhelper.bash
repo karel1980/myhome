@@ -44,9 +44,6 @@ while [ -n "$1" ]; do
       export MAVEN_HOME=$HOME/opt/apache-maven-3.2.2
       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
-     mcol)
-       mo="$mo -javaagent:$HOME/.m2/maven-color-agent-1.1.jar"
-       ;;
      mm)
        mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g -XX:ReservedCodeCacheSize=256m"
        ;;
@@ -88,5 +85,5 @@ path_remove /usr/lib/jvm/java-7-oracle
 path_remove /usr/lib/jvm/java-8-oracle
 }
 
-me s mcol m3 mm j7
+me s m3 j8
 

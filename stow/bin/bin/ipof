@@ -1,3 +1,0 @@
-#!/bin/bash
-
-resolveip $1|sed -e "s/.* //"

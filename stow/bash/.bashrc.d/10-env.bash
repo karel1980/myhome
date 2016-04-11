@@ -19,7 +19,7 @@ export DEBFULLNAME="Karel Vervaeke"
 
 export GRADLE_HOME="$HOME/opt/gradle-2.3"
 
-export ANDROID_HOME=$HOME/opt/android-sdk-linux
+export ANDROID_HOME=${ENV_ANDROID_HOME:-$HOME/opt/android-sdk-linux}
 
 function e() {
   [ -z "$1" ] && nautilus .
@@ -79,7 +79,6 @@ each() {
   find . -name "$namearg" -exec $@ {} +
 }
 
-alias z='notify-send'
 alias e='nautilus .'
 alias pw='tail ~/.ng-mix-*'
 
