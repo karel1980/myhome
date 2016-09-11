@@ -107,6 +107,11 @@ for rcfile in ~/.bashrc.d/*.bash; do
     . $rcfile
 done
 
+export NVM_DIR=~/.nvm
+#source $(brew --prefix nvm)/nvm.sh
+#nvm use --delete-prefix v4.4.7 --silent
+#nvm use v5.10.1 --silent
+
 (cd $HOME/work/personal/myhome; git status --short)
 
 PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting

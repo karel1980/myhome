@@ -2,7 +2,7 @@ export EDITOR=vim
 export PRINTER=kyocera
 export ACK_OPTIONS="--ignore-dir=target --ignore-dir=eclipebin --ignore-dir=elipebin --ignore-dir=eclipsebin --ignore-dir=eclipse_bin --ignore-dir=.git"
 
-export SOLR_HOME=$HOME/opt/solr-4.6.0
+export SOLR_HOME=$HOME/opt/solr-6.1.0
 
 export STOW_DATA=$HOME/work/personal/myhome/stow
 export STOW_DATA_EXTRA=$HOME/Dropbox/personal/stowhome
@@ -83,6 +83,7 @@ alias e='nautilus .'
 alias pw='tail ~/.ng-mix-*'
 
 export AWS_DEFAULT_REGION=us-east-1
+export JAVA_TOOL_OPTIONS="-Dapple.awt.UIElement=true"
 
 alias please='sudo $(history -p \!\!)' 
 

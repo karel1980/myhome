@@ -45,7 +45,7 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
      mm)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=3g -Xmx3g -XX:ReservedCodeCacheSize=256m"
+       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2g -Xmx2g -XX:ReservedCodeCacheSize=256m"
        ;;
      mM)
        mo="$mo -Xmx3g"

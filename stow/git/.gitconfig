@@ -3,6 +3,7 @@
 	name = Karel Vervaeke
 [core]
 	excludesfile = ~/.gitignore_global
+	hooksPath = ~/work/personal/git-hooks
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
