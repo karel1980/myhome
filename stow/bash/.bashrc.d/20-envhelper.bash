@@ -15,8 +15,6 @@ Where config is one of:
   mc      (clear maven opts)
   mcol    (maven syntax coloring)
   md      (maven opts for debugging (port 5005))
-  mm      (maven opts: 2048m)
-  mM      (maven opts: 2048m)
   mp      (maven opts: 2048m permgen)"
 
 local moc
@@ -45,10 +43,7 @@ while [ -n "$1" ]; do
       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
        ;;
      mm)
-       mo="$mo -XX:PermSize=512m -XX:MaxPermSize=2g -Xmx2g -XX:ReservedCodeCacheSize=256m"
-       ;;
-     mM)
-       mo="$mo -Xmx3g"
+       mo="$mo"
        ;;
      md)
        mo="$mo -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=y"

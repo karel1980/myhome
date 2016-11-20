@@ -108,13 +108,15 @@ for rcfile in ~/.bashrc.d/*.bash; do
 done
 
 export NVM_DIR=~/.nvm
-#source $(brew --prefix nvm)/nvm.sh
+source $(brew --prefix nvm)/nvm.sh
 #nvm use --delete-prefix v4.4.7 --silent
 #nvm use v5.10.1 --silent
 
 (cd $HOME/work/personal/myhome; git status --short)
 
 PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+eval "$(thefuck --alias)"
 
 . /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 ### Added by the Heroku Toolbelt
