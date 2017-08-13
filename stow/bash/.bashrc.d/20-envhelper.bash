@@ -8,10 +8,6 @@ function me() {
 Where config is one of:
   s       (silent - suppresses env variable feedback)
   j7      (set JAVA_HOME to java 7 oracle)
-  awvd    (awv-daisy env)
-  awvp    (awv-app env)
-  d23     (daisy 2.3)
-  d24rc1  (daisy 2.4-RC1)
   mc      (clear maven opts)
   mcol    (maven syntax coloring)
   md      (maven opts for debugging (port 5005))
@@ -33,7 +29,7 @@ while [ -n "$1" ]; do
       export JAVA_HOME=$ENV_J8_HOME
       [ -z "$silent" ] && echo JAVA_HOME=$JAVA_HOME
       ;;
-     m3)
+     m30)
       export MAVEN_HOME=$HOME/opt/apache-maven-3.0.5
       path_prepend $MAVEN_HOME/bin
       [ -z "$silent" ] && echo MAVEN_HOME=$MAVEN_HOME
@@ -80,5 +76,5 @@ path_remove /usr/lib/jvm/java-7-oracle
 path_remove /usr/lib/jvm/java-8-oracle
 }
 
-me s m3 j8
+me s j8
 

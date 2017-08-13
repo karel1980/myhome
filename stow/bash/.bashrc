@@ -107,11 +107,6 @@ for rcfile in ~/.bashrc.d/*.bash; do
     . $rcfile
 done
 
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-#nvm use --delete-prefix v4.4.7 --silent
-#nvm use v5.10.1 --silent
-
 (cd $HOME/work/personal/myhome; git status --short)
 
 PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -121,3 +116,9 @@ eval "$(thefuck --alias)"
 . /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/karelvervaeke/.sdkman"
+[[ -s "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$HOME/.yarn/bin:$PATH"

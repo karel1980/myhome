@@ -44,3 +44,9 @@ source $BASH_IT/bash_it.sh
 
 [[ -r ~/.bashrc ]] && . ~/.bashrc
 #source ~/.docker-machine-env.sh
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/karelvervaeke/.sdkman"
+[[ -s "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh"
