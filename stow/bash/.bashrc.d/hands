@@ -1,0 +1,2 @@
+export IMAGE_DIR=$HOME/work/personal/hands/images/scaled
+export ANNOTATION_DIR=$HOME/work/personal/hands/images/annotations

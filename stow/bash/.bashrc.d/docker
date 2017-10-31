@@ -1,0 +1,2 @@
+alias dco='docker-compose'
+alias dcokru='docker-compose kill && docker-compose rm -f && docker-compose up -d'

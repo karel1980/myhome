@@ -49,3 +49,6 @@ endfunction
 autocmd BufWritePost *.ts call UpdateTags()
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Disable swp files because https://github.com/ember-cli/ember-cli/issues/2329
+set wildignore+=*.swp,*~,._*
