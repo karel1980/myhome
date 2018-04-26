@@ -113,7 +113,6 @@ PATH=$PATH:$HOME/.local/bin:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 eval "$(thefuck --alias)"
 
-. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -122,3 +121,4 @@ export SDKMAN_DIR="/Users/karelvervaeke/.sdkman"
 [[ -s "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/karelvervaeke/.sdkman/bin/sdkman-init.sh"
 
 export PATH="$HOME/.yarn/bin:$PATH"
+

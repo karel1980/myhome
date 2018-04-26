@@ -1,10 +1,10 @@
 [user]
-	email = karel.vervaeke@aca-it.be
+	email = karel.vervaeke@securex.be
 	name = Karel Vervaeke
 [core]
 	excludesfile = ~/.gitignore_global
 	hooksPath = ~/work/personal/git-hooks
-	#autocrlf = true
+	autocrlf = false
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all

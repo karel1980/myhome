@@ -4,51 +4,47 @@ set hls
 set cm=blowfish
 colo elflord
 
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-execute pathogen#infect()
-filetype plugin indent on
-"map <C-n> :NERDTreeToggle <enter>
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-augroup CPT
-  au!
-  au BufReadPre *.cpt set bin
-  au BufReadPre *.cpt set viminfo=
-  au BufReadPre *.cpt set noswapfile
-  au BufReadPost *.cpt let $vimpass = inputsecret("Password: ")
-  au BufReadPost *.cpt silent '[,']!ccrypt -cb -E vimpass
-  au BufReadPost *.cpt set nobin
-  au BufWritePre *.cpt set bin
-  au BufWritePre *.cpt '[,']!ccrypt -e -E vimpass
-  au BufWritePost *.cpt u
-  au BufWritePost *.cpt set nobin
-augroup END
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-augroup markdown
-    au!
-    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlp/ctrlp.vim'
 
-function! DelTagOfFile(file)
-  let fullpath = a:file
-  let cwd = getcwd()
-  let tagfilename = cwd . "/tags"
-  let f = substitute(fullpath, cwd . "/", "", "")
-  let f = escape(f, './')
-  let cmd = 'sed -i "/' . f . '/d" "' . tagfilename . '"'
-  let resp = system(cmd)
-endfunction
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"""" Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+"""Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"""Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+""""Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
-function! UpdateTags()
-  let f = expand("%:p")
-  let cwd = getcwd()
-  let tagfilename = cwd . "/tags"
-  let cmd = 'ctags -a -f ' . tagfilename
-  call DelTagOfFile(f)
-  let resp = system(cmd)
-endfunction
-autocmd BufWritePost *.ts call UpdateTags()
-
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" Disable swp files because https://github.com/ember-cli/ember-cli/issues/2329
-set wildignore+=*.swp,*~,._*
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
